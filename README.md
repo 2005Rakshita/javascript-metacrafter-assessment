@@ -1,47 +1,5 @@
-# javascript-metacrafter-assessment
-/*
-Assessment Requirements
-1. Create a variable that can hold a number of NFT's. What type of variable might this be?
-2. Create an object inside your mintNFT function that will hold the metadata for your NFTs. 
-   The metadata values will be passed to the function as parameters. When the NFT is ready, 
-   you will store it in the variable you created in step 1
-3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
-4. For good measure, getTotalSupply() should return the number of NFT's you have created
-*/
-
-// create a variable to hold your NFT's
-let NFTs=[];
-// this function will take in some values as parameters, create an
-// NFT object using the parameters passed to it for its metadata, 
-// and store it in the variable above.
-function mintNFT (user, coures, fees) {
-const NFT={
-    user_name: user,
-    coures_name: coures,
-    ammount:fees,
-};
-NFTs.push(NFT);
-
-}
-
-
-// create a "loop" that will go through an "array" of NFT's
-// and print their metadata with console.log()
-function listNFTs () {
-for(var i=0;i<NFTs.length;i++)
-{
-console.log(NFTs[i]);
-}}
-
-// print the total number of NFTs we have minted to the console
-function getTotalSupply() {
-console.log("total number of NFTs: "+NFTs.length);
-}
-
-// call your functions below this line
-mintNFT("Rashi","JS",3000);
-mintNFT("Ram","C++",2000);
-mintNFT("Komal","C",1000);
-listNFTs();
-getTotalSupply();
-
+hi there, i am rakshita thakur here is the berif explanation of the given assessment 
+firstly create a arrary using var , let or const then in mintNFT function create a object, use the parameter of function as the properties of object then add the object variable in the array created before using push command
+create a function to print the listNFT to print all the entires in the object using for loop
+create another function gettotal where the total number of entires are printed 
+lastly call all the fuction one by one.
